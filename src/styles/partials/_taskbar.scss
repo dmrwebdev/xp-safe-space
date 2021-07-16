@@ -1,0 +1,109 @@
+#taskbar {
+    height: 30px;
+    justify-content: flex-start;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin-top: auto;
+    flex: 0 0 auto;
+    border-right: 1px #0e50a8;
+    text-shadow: 0px 0px 1px black;
+
+}
+
+#start-container {
+    height: inherit;
+    position: relative;
+}
+
+#start-btn {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 30px;
+    margin-right: .7em;
+}
+
+.start-open {
+    filter: brightness(70%);
+}
+
+/*  TODO
+Better gradient (or glow) for box shadow
+Add folder icon
+Add taskbar quick icons
+Better Gradient on */
+
+#show-desktop-container {
+    border-radius: 3px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3px;
+    margin-right: .7em;
+}
+
+#show-desktop-container:hover {
+    background-color: #4089ff;
+}
+
+#show-desktop {
+    height: 20px;
+    
+}
+
+
+
+
+.taskbar-program {
+    background-color: #0e50a8;
+    /* padding: 0.5em; */
+    
+    border-radius: 3px;
+    box-shadow: 0px 0px 1px 1px #2060dd;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    color: white;
+    user-select: none;
+    
+}
+
+.taskbar-program:hover {
+    background-color: #4089ff;
+}
+
+.program-active {
+    background-color: #397eeb;
+}
+
+#system-tray {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    /* background-color: #0c8dee; */
+    background: linear-gradient(180deg,
+            #39a8f1,
+            #0b92e9 8%,
+            #0b92e9 40%,
+            #0b93e9 88%,
+            #0b93e9 93%,
+            #0ba0f6 95%,
+            #0ba0f6 96%,
+            #0ba0f6);
+    height: 30px;
+    padding: 0 1em;
+    border-left: 1px solid #186fb7;
+}
+
+#system-icons {
+    height: 20px;
+}
+
+#time {
+    color: white;
+    margin-left: 0.5em;
+    user-select: none;
+}

@@ -1,0 +1,81 @@
+.title-bar-text {
+    display: flex;
+    align-items: center;
+}
+
+#menu-bar {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #bebaac;
+    margin: 0 3px;
+}
+
+.menu-bar-action {
+    height: 100%;
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+}
+
+.menu-bar-action:hover {
+  background-color: #817e71;
+}
+
+#xp-logo {
+    height: 28px;
+    margin-left: auto;
+    border-left: 1px solid #bebaac;
+}
+
+#address-bar {
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
+    border-bottom: 1px solid #bebaac;
+    margin: 0 3px;
+}
+
+#address-bar input {
+    flex: 1 1 0;
+    border: 1px gray solid;
+}
+
+#go-btn-container {
+    display: flex;
+    align-items: center;
+}
+
+#go-btn-container img {
+    height: 23px;
+}
+
+/* #navigation-bar {
+  display: flex;
+  height: 40px;
+  margin-bottom: 8px;
+}
+
+#navigation-bar div {
+  margin-left: 1.5em;
+  display: flex;
+  align-items: center;
+}
+
+#back-button-container {
+  position: relative;
+}
+
+#back-button {
+  width: 40px;
+  height: 40px;
+  background-color: green;
+  clip-path: circle(50% at 50% 50%);
+}
+
+#back-button-bg {
+}
+
+#button-arrow {
+  width: 30px;
+  position: absolute;
+} */
