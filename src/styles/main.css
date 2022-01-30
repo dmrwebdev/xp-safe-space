@@ -6,12 +6,13 @@ html {
 body {
   height: inherit;
   margin: 0;
-  background: url(https://external-preview.redd.it/uhq5zTcMPM3tOW_fbUz4PayDt_5pkEXdyXXoRWs3XOg.jpg?auto=webp&s=e06461124c1ccfdba7e9ece763b644ff68eeb06b) center/cover no-repeat fixed;
+  background: url("../assets/bliss.webp") center/cover no-repeat fixed;
   scrollbar-width: none;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 img {
@@ -21,8 +22,20 @@ img {
 
 pre {
   margin: 0 !important;
-  height: 500px;
-  width: inherit;
+  /*   height: 500px; */
+  width: fit-content;
+}
+
+blockquote {
+  border-left: 5px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
 }
 
 .mdp-preview {
@@ -272,7 +285,17 @@ Better Gradient on */
   display: flex;
   align-items: center;
   /* background-color: #0c8dee; */
-  background: linear-gradient(180deg, #39a8f1, #0b92e9 8%, #0b92e9 40%, #0b93e9 88%, #0b93e9 93%, #0ba0f6 95%, #0ba0f6 96%, #0ba0f6);
+  background: linear-gradient(
+    180deg,
+    #39a8f1,
+    #0b92e9 8%,
+    #0b92e9 40%,
+    #0b93e9 88%,
+    #0b93e9 93%,
+    #0ba0f6 95%,
+    #0ba0f6 96%,
+    #0ba0f6
+  );
   height: 30px;
   padding: 0 1em;
   border-left: 1px solid #186fb7;

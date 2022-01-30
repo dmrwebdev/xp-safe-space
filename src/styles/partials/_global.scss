@@ -1,38 +1,37 @@
 html {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 body {
-    height: inherit;
-    margin: 0;
-    background: url(https://external-preview.redd.it/uhq5zTcMPM3tOW_fbUz4PayDt_5pkEXdyXXoRWs3XOg.jpg?auto=webp&s=e06461124c1ccfdba7e9ece763b644ff68eeb06b) center/cover no-repeat fixed;
-    scrollbar-width: none;
+  height: inherit;
+  margin: 0;
+  background: url(../../assets/bliss.webp) center/cover no-repeat fixed;
+  scrollbar-width: none;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 img {
- /*    pointer-events: none; */
-    /* Prevent images from being dragged */
+  /*    pointer-events: none; */
+  /* Prevent images from being dragged */
 }
 
 pre {
-    margin: 0 !important;
-    height: 500px;
-    width: inherit;
+  margin: 0 !important;
+  /* height: 500px; */
+  width: inherit;
 }
 
 .mdp-preview {
-    height: 18px;
-    margin: 0 5px;
-    filter: drop-shadow(0 0 1px black);
+  height: 18px;
+  margin: 0 5px;
+  filter: drop-shadow(0 0 1px black);
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
-
