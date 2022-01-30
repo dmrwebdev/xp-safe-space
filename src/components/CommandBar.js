@@ -1,3 +1,6 @@
+import xpLogo from '../assets/xp-logo.jpg';
+import goButton from '../assets/xp-go-button.png';
+
 export default function CommandBar() {
   return (
     <>
@@ -7,7 +10,7 @@ export default function CommandBar() {
             {item}
           </div>
         ))}
-        <img id="xp-logo" src="images/xp_logo.jpg" alt="Windows XP Logo" />
+        <img id="xp-logo" src={xpLogo} alt="Windows XP Logo" />
       </div>
 
       <div id="address-bar">
@@ -17,7 +20,7 @@ export default function CommandBar() {
           placeholder="https://www.developwithderek.com/projects/xp-md-previewer"
         />
         <div id="go-btn-container">
-          <img id="xpGoButton" src="images/xpGoButton.png" alt="XP Go Button" />
+          <img id="xpGoButton" src={goButton} alt="XP Go Button" />
           <p>Go</p>
         </div>
         {/* <button>Go</button> */}

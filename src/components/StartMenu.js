@@ -1,4 +1,9 @@
 import { useState, useEffect, useRef } from "react";
+import xpStart from "../assets/xp-start.png";
+import dwd from "../assets/dwd.png";
+import xpLogOff from "../assets/xp-log-off.png";
+import xpShutdown from "../assets/xp-shutdown.png" ;
+
 
 export default function StartMenu(props) {
   const [startMenuOpen, setStartMenuOpen] = useState(false);
@@ -19,14 +24,14 @@ export default function StartMenu(props) {
       <img
         id="start-btn"
         className={props.startMenuOpen ? "start-open" : null}
-        src="images/xp_start.png"
+        src={xpStart}
         alt="XP Start Menu"
         onClick={() => setStartMenuOpen((startMenuOpen) => !startMenuOpen)}
       />
       {startMenuOpen ? (
         <div id="start-menu">
           <div id="start-title-bar" className="title-bar">
-            <img id="start-logo" src="images/dwd.png" alt="!DMR" />
+            <img id="start-logo" src={dwd} alt="!DMR" />
             <span>Develop With Derek</span>
           </div>
           <div id="start-app-container">
@@ -54,14 +59,14 @@ export default function StartMenu(props) {
               id="start-log-off-container"
               className="start-command-container"
             >
-              <img src="images/xp_log_off.png" alt="XP Log Off Icon" />
+              <img src={xpLogOff} alt="XP Log Off Icon" />
               <span>L</span>og Off
             </div>
             <div
               id="start-shutdown-container"
               className="start-command-container"
             >
-              <img src="images/xp_shutdown.png" alt="XP Shutdown Icon" />T
+              <img src={xpShutdown} alt="XP Shutdown Icon" />T
               <span>u</span>rn Off Computer
             </div>
           </div>

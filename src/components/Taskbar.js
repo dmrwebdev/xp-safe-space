@@ -2,6 +2,9 @@ import { useState, useEffect, useRef } from "react";
 import useInterval from "../hooks-helpers/useInterval";
 import { getCurrentTime } from "../hooks-helpers/helpers";
 import StartMenu from "./StartMenu";
+import mdpPreview from '../assets/mdp-preview.png';
+import xpShowDesktop from "../assets/xp-show-desktop.png";
+import xpSysTray from "../assets/xp-sys-tray-icons.png";
 
 export default function Taskbar(props) {
   const [time, setTime] = useState(getCurrentTime());
@@ -18,7 +21,7 @@ export default function Taskbar(props) {
       >
         <img
           id="show-desktop"
-          src="images/xp_show_desktop.png"
+          src={xpShowDesktop}
           alt="XP Show Desktop"
         />
       </div>
@@ -35,7 +38,7 @@ export default function Taskbar(props) {
         >
           <img
             className="mdp-preview"
-            src="images/mdp_preview.png"
+            src={mdpPreview}
             alt="MDP Preview"
           />
           React Previewer
@@ -45,7 +48,7 @@ export default function Taskbar(props) {
       <div id="system-tray">
         <img
           id="system-icons"
-          src="images/xp_sys_tray_icons.png"
+          src={xpSysTray}
           alt="XP System Tray Icons"
         />
         <div id="time">{time}</div>

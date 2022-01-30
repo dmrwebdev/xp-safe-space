@@ -1,10 +1,12 @@
+import mdpPreview from "../assets/mdp-preview.png"
+
 export default function TitleBar(props) {
   return (
     <div className="title-bar">
       <div className="title-bar-text">
         <img
           className="mdp-preview"
-          src="images/mdp_preview.png"
+          src={mdpPreview}
           alt="MDP Preview"
         />
         !DMR Markdown Preview

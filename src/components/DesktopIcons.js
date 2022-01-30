@@ -1,4 +1,7 @@
 import { useState, useEffect, useRef } from "react";
+import recycleBin from "../assets/xp-recycle-bin.png";
+import mdpPreview from "../assets/mdp-preview.png";
+
 
 export default function DesktopIcons(props) {
   const [iconSelected, setIconSelected] = useState(null);
@@ -33,7 +36,7 @@ export default function DesktopIcons(props) {
       >
         <img
           id="recycle-bin-img"
-          src="images/xp_recycle_bin.png"
+          src={recycleBin}
           alt="XP Recycle Bin"
         />
         <p>Recycle Bin</p>
@@ -57,7 +60,7 @@ export default function DesktopIcons(props) {
       >
         <img
           id="mdp-program-img"
-          src="images/mdp_preview.png"
+          src={mdpPreview}
           alt="MDP Preview"
         />
         <p>
